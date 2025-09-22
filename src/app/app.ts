@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
 import { User } from "./user/user";
+import { DUMMY_USERS } from './dummyUser';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,6 @@ import { User } from "./user/user";
 })
 export class App {
   protected readonly title = signal('taskApp');
+  
+  users = DUMMY_USERS;
 }
